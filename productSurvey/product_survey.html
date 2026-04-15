@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Lüks Marka Geri Bildirimi</title>
+        </head>
+        <body>
+            <h1>Lüks Marka Ürünleri Geri Bildirimine Hoş Geldiniz</h1>
+            <h2>Geri Bildiriminizi Paylaşın</h2>
+            <label for="name">İsim:</label><br>
+            <input type="text" id="name" placeholder="Adınız" required><br>
+            <label for="age">Yaş:</label><br>
+            <input type="number" id="age" placeholder="Yaşınız" required><br>
+            <label for="email">E-posta:</label><br>
+            <input type="email" id="email" placeholder="E-posta Adresiniz" required><br>
+            <label for="job">Meslek:</label><br>
+            <input type="text" id="job" placeholder="Mesleğiniz" required><br>
+            <label for="designation">Görev:</label><br>
+            <input type="text" id="designation" placeholder="Göreviniz" required><br>
+            <label for="productType">Ürün Türü:</label><br>
+            <select id="productType" required>
+                <option value="perfume">Parfüm</option>
+                <option value="cream">Krem</option>
+                <option value="oils">Yağlar</option>
+            </select><br>
+            <label for="feedbackText">Geri Bildirim:</label><br>
+            <textarea id="feedbackText" rows="5" cols="30" placeholder="Geri bildiriminizi buraya girin" required></textarea><br>
+            <button id="submitBtn">Geri Bildirimi Gönder</button>
+            <hr>
+            <div id="userInfo" style="display: none;">
+            <h2>Kullanıcı Bilgileri:</h2>
+            <p>İsim: <span id="userName"></span></p>
+            <p>Yaş: <span id="userAge"></span></p>
+            <p>E-posta: <span id="userEmail"></span></p>
+            <p>Meslek: <span id="userJob"></span></p>
+            <p>Görev: <span id="userDesignation"></span></p>
+            <p>Seçilen ürün için geri bildirim: <span id="userProductChoice"></span>: <span id="userFeedback"></span></p>
+            </div>
+            <script src="./product_survey.js"></script>
+        </body>
+    </html>
